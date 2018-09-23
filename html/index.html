@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Jose Torres - Software Developer</title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Personal website for Jose Torres">
+		<meta name="author" content="Jose Torres">
+		<link href = "../css/main.css" type = "text/css" rel = "stylesheet" /> 
+		<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	</head>
+	<body onload = "resize()" onresize = "resize()">
+		
+		<div class = "container">
+			<div class = "child" id = "left-panel">
+				<h1 class = "title">jose</h1>
+				<h1 class = "title">charpie&nbsp</h1>
+				<h1 class = "title">torres&nbsp</h1>
+				<br/><br/><br/><br/><br/><br/>
+				<br/><br/><br/><br/><br/><br/>
+				<br/><br/><br/><br/><br/><br/>
+				<p id = "rights">&nbspcharpie 2018</p>
+			</div>
+			<div class = "child" id = "right-panel">
+				<ul id = "nav">
+					<li>A B O U T</li>
+					<br/>
+					<li><a href="../resume/jose-torres-resume.pdf" download target="_blank">
+						R E S U M E (dl)</a></li>
+					<br/>
+					<li>G I T H U B</li>
+					<br/>
+					<li>C O N T A C T</li>
+				</ul>
+			</div>
+		</div>
+
+		<script>
+			function resize() 
+			{
+				var titles = document.getElementsByClassName('title');
+				var body = document.getElementsByTagName('BODY')[0];
+				console.log(titles);
+				if (window.outerHeight < window.outerWidth)
+				{
+					
+					console.log('hey3');
+					
+
+				}
+				else
+				{
+					
+					console.log('hey3');
+				}
+			}
+		</script>
+	</body>
+</html>
