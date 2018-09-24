@@ -6,56 +6,56 @@
 		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Personal website for Jose Torres">
 		<meta name="author" content="Jose Torres">
-		<link href = "../css/main.css" type = "text/css" rel = "stylesheet" /> 
+		<link rel="icon" type="image/png" href="pics/icon.png">
+		<link href = "css/main.css" type = "text/css" rel = "stylesheet" /> 
 		<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 	</head>
 	<body onload = "resize()" onresize = "resize()">
+		
 		<div class = "container">
 			<div class = "child" id = "left-panel">
-				<h1 class = "title">jose</h1>
-				<h1 class = "title">charpie&nbsp</h1>
-				<h1 class = "title">torres&nbsp</h1>
+				<a href = "index.html">
+					<h1 class = "title">jose<br/>charpie&nbsp<br/>torres&nbsp</h1>
+				</a>
 				<br/><br/><br/><br/><br/><br/>
 				<br/><br/><br/><br/><br/><br/>
 				<br/><br/><br/><br/><br/><br/>
-				<div id = "square">
-					<img/>
-				</div>
-				<p>&nbspcharpie 2018</p>
+				<p id = "rights">&nbspcharpie 2018</p>
 			</div>
 			<div class = "child" id = "right-panel">
-				<ul id = "list">
-					<li id = "test">A B O U T</li>
+				<ul id = "nav">
+					<li><a href = "about.html">
+						&nbsp&nbspA B O U T</a></li>
 					<br/>
-					<li><a href="../resume/jose-torres-resume.pdf" download target="_blank"> R E S U M E (dl)</a></li>
+					<li><a href="resume/jose-torres-resume.pdf" download target="_blank">
+						R E S U M E</a></li>
 					<br/>
-					<li>G I T H U B</li>
+					<li><a href = "https://github.com/technocharpie" target = "_blank">
+						G I T H U B</a></li>
 					<br/>
-					<li>C O N T A C T</li>
+					<li><a href = "contact.html">
+						C O N T A C T</a></li>
 				</ul>
 			</div>
 		</div>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script>
 			function resize() 
 			{
-				var titles = document.getElementsByClassName('title');
-				var body = document.getElementsByTagName('BODY')[0];
-				console.log(titles);
-				if (window.outerHeight < window.outerWidth)
+				if (window.outerHeight < window.outerWidth) //desktop/laptop
 				{
-					
-					console.log('hey3');
-					
-
+					$('li').each(function() { $(this).css('font-size', '3vw')});
+					$('#rights').each(function() { $(this).css('font-size', '2.25vw')});
 				}
-				else
+				else //mobile dev
 				{
-					
-					console.log('hey3');
+					$('li').each(function() { $(this).css('font-size', '6vh')});
+					$('#rights').each(function() { $(this).css('font-size', '4.5vh')});
 				}
 			}
 		</script>
+
 	</body>
 </html>
