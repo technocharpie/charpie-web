@@ -6,9 +6,9 @@
 		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Personal website for Jose Torres">
 		<meta name="author" content="Jose Torres">
+		<link rel="icon" type="image/png" href="pics/icon.png">
 		<link href = "css/main.css" type = "text/css" rel = "stylesheet" /> 
 		<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 	</head>
 	<body onload = "resize()" onresize = "resize()">
@@ -25,35 +25,33 @@
 			</div>
 			<div class = "child" id = "right-panel">
 				<ul id = "nav">
-					<li>&nbsp&nbspA B O U T</li>
+					<li><a href = "about.html">
+						&nbsp&nbspA B O U T</a></li>
 					<br/>
 					<li><a href="resume/jose-torres-resume.pdf" download target="_blank">
 						R E S U M E</a></li>
 					<br/>
-					<li><a href = "https://github.com/technocharpie" target = "_blank">G I T H U B</a></li>
+					<li><a href = "https://github.com/technocharpie" target = "_blank">
+						G I T H U B</a></li>
 					<br/>
 					<li>C O N T A C T</li>
 				</ul>
 			</div>
 		</div>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script>
 			function resize() 
 			{
-				var titles = document.getElementsByClassName('title');
-				var body = document.getElementsByTagName('BODY')[0];
-				console.log(titles);
-				if (window.outerHeight < window.outerWidth)
+				if (window.outerHeight < window.outerWidth) //desktop/laptop
 				{
-					
-					console.log('hey3');
-					
-
+					$('li').each(function() { $(this).css('font-size', '3vw')});
+					$('#rights').each(function() { $(this).css('font-size', '2.25vw')});
 				}
-				else
+				else //mobile dev
 				{
-					
-					console.log('hey3');
+					$('li').each(function() { $(this).css('font-size', '6vh')});
+					$('#rights').each(function() { $(this).css('font-size', '4.5vh')});
 				}
 			}
 		</script>
