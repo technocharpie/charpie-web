@@ -24,38 +24,14 @@
 				<p id = "rights">&nbspcharpie 2018</p>
 			</div>
 			<div class = "child" id = "right-panel">
-				<ul id = "nav">
-					<li><a href = "about.html">
-						&nbsp&nbspA B O U T</a></li>
-					<br/>
-					<li><a href="resume/jose-torres-resume.pdf" download target="_blank">
-						R E S U M E</a></li>
-					<br/>
-					<li><a href = "https://github.com/technocharpie" target = "_blank">
-						G I T H U B</a></li>
-					<br/>
-					<li><a href = "contact.html">
-						C O N T A C T</a></li>
-				</ul>
+				<img src = "pics/profile.jpg" alt = "profile picture of me, Charpie, wearing a black tee and glasses." title = "Charpie profile pic" id = "profile"/>
+				<br/>
+				<p id = "about">hello, name is jose torres, but my friends call me charpie.<br/><br/>I am a Computer Science student at the University of Florida, focusing on software development and full-stack web development.<br/><br/>After </p>
 			</div>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script>
-			function resize() 
-			{
-				if (window.outerHeight < window.outerWidth) //desktop/laptop
-				{
-					$('li').each(function() { $(this).css('font-size', '3vw')});
-					$('#rights').each(function() { $(this).css('font-size', '2.25vw')});
-				}
-				else //mobile dev
-				{
-					$('li').each(function() { $(this).css('font-size', '6vh')});
-					$('#rights').each(function() { $(this).css('font-size', '4.5vh')});
-				}
-			}
-		</script>
+		<script src = "js/main.js"></script>
 
 	</body>
 </html>
