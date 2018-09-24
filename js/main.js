@@ -10,6 +10,8 @@ function resize()
 		$('#right-panel').each(function() { $(this).css('flex-direction', 'row')});
 		$('#profile').each(    function() { $(this).css('height', '30%')});
 		$('#profile').each(    function() { $(this).css('width', '30%')});
+		$('#profile').each(function() { $(this).css('margin-bottom', '')});
+		$('#profile').each(function() { $(this).css('padding-bottom', '')});
 	}
 	else //mobile dev
 	{
@@ -21,5 +23,7 @@ function resize()
 		$('#right-panel').each(function() { $(this).css('flex-direction', 'column')});
 		$('#profile').each(function() { $(this).css('height', '80%')});
 		$('#profile').each(function() { $(this).css('width', '80%')});
+		$('#profile').each(function() { $(this).css('margin-bottom', '0px')});
+		$('#profile').each(function() { $(this).css('padding-bottom', '0px')});
 	}
 }
