@@ -40,10 +40,9 @@ h2 {
 }
 #right-panel {
 	margin: auto;
-	color: blue;
 	background-color: black;
 	display: flex;
-	max-width: 50%;
+	max-width: 55%;
 	flex-direction: row;
 }
 
