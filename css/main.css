@@ -84,7 +84,7 @@ ul {
 	padding: 20px;
 }
 
-p#about {
+p#about, #contact {
 	color: pink;
 	margin: auto;
 	padding: 20px;
@@ -97,3 +97,9 @@ p#about {
 	width: 30%; 
 	height: 30%; 
 }
+
+#contact {
+	margin-top: 50%;
+	margin-bottom: 50%;
+}
+
